@@ -1,2 +1,2 @@
 # Course-mlops-zoomcamp
-Mlops bootcamp
+Mlops bootcamp 2025 to explore the mlops capabilities.
