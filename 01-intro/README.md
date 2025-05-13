@@ -1,4 +1,4 @@
-**mlops-zoomcamp Module1 **
+mlops-zoomcamp Module1 
 
 Linear Regression
 
@@ -27,7 +27,7 @@ Further Reading:
 
     
 ________________________________________
-🔢 One-Hot Encoding
+One-Hot Encoding
 
 Q1: What is One-Hot Encoding?
 One-hot encoding is a feature engineering technique used to convert categorical data into a binary numerical format suitable for machine learning models.
