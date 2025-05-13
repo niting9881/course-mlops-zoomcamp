@@ -47,7 +47,7 @@ Further Reading:
 •	Intro to One-Hot Encoding 
     https://www.geeksforgeeks.org/ml-one-hot-encoding/
 ________________________________________
-📏 RMSE (Root Mean Squared Error)
+RMSE (Root Mean Squared Error)
 
 Q1: What is RMSE?
 RMSE stands for Root Mean Squared Error. It is a regression metric that measures the average magnitude of the error between predicted and actual values. It’s always non-negative, and lower values indicate better fit.
