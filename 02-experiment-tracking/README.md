@@ -1,19 +1,15 @@
-1. What is MLflow?
+# **1. What is MLflow?**
 
 MLflow is an open-source platform for managing end-to-end machine learning workflows. It provides components for:
 
-Experiment tracking
+- Experiment tracking
+- Reproducible runs
+- Model registry
+- Deployment support
 
-Reproducible runs
+**Official Docs:** [MLflow Documentation](https://mlflow.org/docs/latest/index.html)
 
-Model registry
-
-Deployment support
-
-Official Docs: MLflow Documentation 
-https://mlflow.org/docs/latest/index.html
-
-2. MLflow Tracking Server
+# **2. MLflow Tracking Server**
 
 To launch a local tracking server:
 
@@ -23,7 +19,10 @@ mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./
 
 --default-artifact-root: Path for saving model artifacts
 
-3. Experiment Tracking in Code
+
+**Official Docs:** [MLflow Documentation](https://mlflow.org/docs/latest/tracking/)
+
+# **3. Experiment Tracking in Code**
 
 Set up your experiment tracking in your Python script:
 
@@ -34,9 +33,11 @@ mlflow.set_experiment("experiment-name")
 with mlflow.start_run():
     # log params, metrics, models here
 
-4. Logging Params, Metrics, and Models
+**Official Docs:** [MLflow Documentation](https://mlflow.org/docs/latest/tracking/tracking-api#organizing-runs-in-experiments)
 
-Manual Logging:
+# **4. Logging Params, Metrics, and Models**
+
+**Manual Logging:**
 
 mlflow.log_param("param_name", value)
 mlflow.log_metric("metric_name", value)
@@ -46,7 +47,10 @@ Autologging (for scikit-learn):
 
 mlflow.sklearn.autolog()
 
-5. Hyperparameter Optimization (HPO)
+**Official Docs:** [MLflow Documentation](https://mlflow.org/docs/latest/tracking/tracking-api#organizing-runs-in-experiments)
+
+
+# **5. Hyperparameter Optimization (HPO)**
 
 Using hyperopt to find the best model parameters:
 
@@ -67,9 +71,11 @@ def objective(params):
 
         return {'loss': rmse, 'status': STATUS_OK}
 
-6. Querying and Registering Models
+**Official Docs:** [scikit-learn Documentation](https://scikit-learn.org/stable/modules/grid_search.html)
 
-Connect to the Tracking Server:
+# **6. Querying and Registering Models**
+
+**Connect to the Tracking Server:**
 
 from mlflow.tracking import MlflowClient
 client = MlflowClient(tracking_uri="http://127.0.0.1:5000")
@@ -88,17 +94,9 @@ Register the Best Model:
 model_uri = f"runs:/{best_run.info.run_id}/model"
 mlflow.register_model(model_uri, "random-forest-best-model")
 
-7. Model Registry
+**Official Docs:** [MLflow Documentation](https://mlflow.org/docs/latest/model-registry/))
 
-Manage and track models across stages (Staging, Production, Archived):
-
-Promote/demote via MLflow UI or API
-
-Track versioned models centrally
-
-API Reference: MLflow Python API
-
-8. Best Practices
+# **7. Best Practices**
 
 Launch the tracking server before logging experiments
 
@@ -108,9 +106,9 @@ Log all relevant params and metrics
 
 Use the model registry for versioning and stage promotion
 
-9. Common Commands
+# **8. Common Commands**
 
-Start full server:
+**Start full server:**
 
 mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts
 
@@ -122,7 +120,7 @@ Set experiment (in code):
 
 mlflow.set_experiment("experiment-name")
 
-10. References & Links
+# **9. References & Links**
 
 MLflow Docs -https://mlflow.org/docs/latest/index.html
 
