@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/d9dfd9f9e1a747da97c75270ad2c3748/artifacts
+end_time: 1747686616317
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d9dfd9f9e1a747da97c75270ad2c3748
+run_name: salty-tern-114
+run_uuid: d9dfd9f9e1a747da97c75270ad2c3748
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747686602799
+status: 3
+tags: []
+user_id: nitin
