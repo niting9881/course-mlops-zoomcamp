@@ -70,4 +70,5 @@ Mage Pro: Fully-managed with advanced enterprise features
 
 References:
 1. https://docs.mage.ai/introduction/overview
+
 2. https://docs.mage.ai/design/data-pipeline-management
